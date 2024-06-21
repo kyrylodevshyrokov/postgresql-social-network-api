@@ -5,7 +5,9 @@
   "main": "index.js",
   "scripts": {
     "migrate": "node-pg-migrate",
-    "start:dev": "nodemon index.js"
+    "start:dev": "nodemon index.js",
+    "start": "node index.js",
+    "test": "jest"
   },
   "keywords": [],
   "author": "",
