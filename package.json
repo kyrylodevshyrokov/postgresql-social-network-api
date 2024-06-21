@@ -7,7 +7,7 @@
     "migrate": "node-pg-migrate",
     "start:dev": "nodemon index.js",
     "start": "node index.js",
-    "test": "jest"
+    "test": "jest --no-cache"
   },
   "keywords": [],
   "author": "",
