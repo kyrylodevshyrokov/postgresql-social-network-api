@@ -29,3 +29,55 @@ APP_PORT=your_app_port
 5. Start the project:
 `npm start`
 
+## API Endpoints
+
+### _Users_
+
+### Get All Users
+
+- Method: **GET**
+- URL: {{URL}}/users
+- Requires Auth: **NO**
+- Description: This endpoint allows to get list of all users.
+
+### Get User By ID
+
+- Method: **GET**
+- URL: {{URL}}/users/:id
+- Requires Auth: **NO**
+- Description: This endpoint allows to get details about one user by ID.
+
+### Add New User
+
+- Method: **POST**
+- URL: {{URL}}/users
+- Data:
+```javascript
+{
+    "username": "Tom Shelby",
+    "bio": "Gipsy King"
+}
+```
+- Requires Auth: **NO**
+- Description: This endpoint allows to add a new user with filled following fields: username, and bio.
+
+### Edit User By ID
+
+- Method: **PUT**
+- URL: {{URL}}/users/:id
+- Data:
+```javascript
+{
+   "username": "Tomas Shelby Young",
+   "bio": "Next Gipsy King"
+}
+```
+- Requires Auth: **NO**
+- Description: This endpoint allows to edit the user by changing username, or/and bio.
+
+### Delete User By ID
+
+- Method: **DELETE**
+- URL: {{URL}}/users/:id
+- Requires Auth: **NO**
+- Description: This endpoint allows to delete the user by ID.
